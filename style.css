@@ -1,0 +1,38 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+  }
+
+  section {
+    scroll-margin-top: 80px;
+  }
+  
+  .hero {
+    height: 100vh;
+    background: url('hero.jpg') center/cover no-repeat;
+    position: relative;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    inset: 0;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  h1, h2 {
+    font-weight: 700;
+  }
+  
+  section {
+    padding: 60px 0;
+  }
+  
+  footer {
+    background-color: #000;
+  }
