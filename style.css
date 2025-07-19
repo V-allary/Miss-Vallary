@@ -64,13 +64,53 @@ img {
       padding: 10px 20px;
     }
   }
+  
+  .about-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .about-img {
+    flex: 0 0 35%;
+    max-width: 250px;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
   @media (max-width: 768px) {
-    #about img {
-      max-width: 80%;
-      margin: 0 auto 20px;
+    .about-wrapper {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 20px;
     }
   
-    #about p {
-      font-size: 1rem;
+    .about-img {
+      flex: 0 0 40%;
+      max-width: 150px;
     }
+  
+    .about-text {
+      flex: 1;
+      font-size: 0.95rem;
+    }
+  }
+
+  .profile-img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+    border: 5px solid #00f2ff; /* You can change to #ff00d4 or any accent color */
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.4);
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-img:hover {
+    transform: scale(1.05);
   }
