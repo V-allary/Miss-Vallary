@@ -54,30 +54,34 @@ img {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   }
 
-
-  /* Logo name responsive fix */
-.brand-name {
-  font-size: 1.1rem;
-  white-space: nowrap;
-}
-
-@media (max-width: 420px) {
-  .brand-name {
-    font-size: 1rem;
+.about-img-wrapper {
+    flex-shrink: 0;
+    width: 180px;
   }
-
   
-}
-  .profile-img {
-    width: 180%;
-    border-radius: 6px;
-    object-fit: cover;
+  .about-img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
     box-shadow: none;
-    border: none;
   }
-  .profile-text {
-    font-size: 1.05rem;
-    line-height: 1.8;
-    color: #333;
-    padding: 0 15px;
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  /* Optional spacing/tweaks for small devices */
+  @media (max-width: 768px) {
+    .d-flex {
+      gap: 1rem;
+    }
+  
+    .about-text {
+      text-align: left;
+    }
+  
+    .about-img-wrapper {
+      width: 120px;
+      margin-bottom: 0;
+    }
   }
