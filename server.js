@@ -26,7 +26,7 @@ app.post('/contact', async (req, res) => {
     service: 'gmail',
     auth: {
       user: 'vallarymitchelle1@gmail.com', // Replace with your Gmail
-      pass: 'your-app',   // Use App Password if 2FA is on
+      pass: 'process.env.PTSO',   // Use App Password if 2FA is on
     },
   });
 
