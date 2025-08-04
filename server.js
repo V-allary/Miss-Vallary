@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 // Contact Form Route
-app.post('/contact', async (req, res) => {
+app.post('/submit-form', async (req, res) => {
   const { name, email, message } = req.body;
 
   if (!name || !email || !message) {
